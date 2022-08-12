@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="/css/google.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/src/google-icon.png">
+</head>
+<body>
+    <header>   <!-- Yazılar ve gmail pp -->
+       <span >Gmail</span>  
+       <span>Görseller</span>
+       <img class="hf" src="/src/logo.png" alt=""> 
+            
+    </header>
+
+<main>
+    <div>
+        <div><img src="/src/google.jpg" alt=""></div> <!-- Logo -->
+        <div style="position:relative;height: 25px;"> 
+            <i style="z-index:1; left: 5px; top: 5px;"  class="fa  fa-search absolute"></i>
+            <input id="arainput" style="text-indent:1.2rem; padding: 3px;border-radius: 1rem;height: 1.6rem;" class="absolute wf " type="search">
+            <div style="position:absolute ;right:0;float:left;z-index:1;"> 
+                <i style="margin-top: 5px;margin-right:7px" class="fa  fa-microphone">
+                </i>
+                
+            </div>
+            
+        </div>
+        <div class="bikilas">
+            <input id="arabuton" type="Button" value="Google'da Ara">
+            <a href="https://www.patika.dev" target="_blank"> Kendimi Şanslı Hissediyorum</a>
+           
+        </div>  
+    </div>
+
+</main>
+
+<!--
+    Ana içeriklerin bulunduğu kısım flex olarak tasarlandı. 
+    Her bir DIV'e birbiri üstüne binmeyecek ve google'a en çok benzeyecek
+şekilde biçimlendirme yapıldı.
+
+    JAVASCRİPT ile (google sağolsun)
+    Enter tuşu ve Arama butonuna google'ın kendi query'si eklendi.
+    "KEndimi şanslı hissediyorum butonu sürprizli"
+ -->
+
+    <script defer>
+        const buton = document.querySelector("#arabuton")
+
+        const input = document.querySelector("#arainput")
+
+        input.addEventListener("keydown",(event ) => {
+            if (event.keyCode == 13)
+                    window.location.href=`https://www.google.com/search?q=${input.value}`
+            
+        })
+        buton.addEventListener("click",(event ) => {
+            
+                    window.location.href=`https://www.google.com/search?q=${input.value}`
+            
+        })
+        buton.addEventListener("click",)
+
+        </script>
+</body>
+</html>
