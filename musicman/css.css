@@ -1,0 +1,19 @@
+.headerbg{
+    background-color: rgb(73, 75, 87);
+}
+
+.tw{
+    color:white;
+
+}
+.tw:hover{
+    color: wheat;
+}
+
+.tb{
+    color:brown;
+}
+
+body{
+    background-color: #E9ECEF ;
+}
