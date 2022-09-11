@@ -1,4 +1,4 @@
-let clock = document.querySelector("#saat")     //ID'si saat olan ilk öğeyi seç
+let clock = document.querySelector("#saat")     //ID'si saat olan ilk öğeyi seçer
 document.body.style.transition="all 0.8s"       //Body'nin geçiş hızı ( 1 = 1 saniyede yavaşça , 0 = anlık)
 setInterval(() => {     //setInterval  aşağıdaki kod dizimlerini içeren Callback fonksiyon.(Belirli aralıklarla işlemleri yapar)
     let d = new Date(); //d değişkenine Date fonksiyonunu ata
@@ -14,7 +14,7 @@ setInterval(() => {     //setInterval  aşağıdaki kod dizimlerini içeren Call
     
 }, 1000);   //yukarıdaki işlemleri 1000 ms aralıklarla tekrarlar.
 
-let day = document.querySelector("#text3")      //ID'si text3 olan ilk öğeyi seç
+let day = document.querySelector("#text3")      //ID'si text3 olan ilk öğeyi seçer
 var today = new Date();     //4. satırdakinin kardeşi
 var dd = String(today.getDate()).padStart(2, '0');      //
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //  5-10. satırlar arasındaki işlemin farklı yazım biçimi
@@ -24,7 +24,11 @@ today = mm + '/' + dd + '/' + yyyy;     //Basit String birleştirme (Template Li
 
 setTimeout(() => {  //setTimeout  aşağıdaki kod dizimlerini içeren Callback fonksiyon.(İşlemi belli miktar bekleyip 1 kere yapar)
     day.innerHTML = today + " tarihinde"    //Basit string birleştirme
-}, 1000);   //yukarıdaki işlemi 1000 ms sonra gerçekleştir.
+}, 3000);   //yukarıdaki işlemi 3000 ms sonra gerçekleştir.
+
+let getName = prompt("Lütfen adınızı girin.")           //kullanıcıdan adını alır ve değişkene atar
+let selectName = document.querySelector("#myName")      //ID'si myName olan ilk öğeyi seçer
+selectName.innerHTML = `${getName}`         //seçtiği öğenin innerHTML'ini Template Literal ile yeniden düzenler.
 
 // 4. satır JavaScript'in içerdiği Date fonksiyonunu değişkene atar.
 // 5. 6. 7. satırda d değişkeninin saat, dakika, saniye değerlerini ayrı değişkenlere atar.
@@ -34,3 +38,4 @@ setTimeout(() => {  //setTimeout  aşağıdaki kod dizimlerini içeren Callback 
 // 14. satır setInterval'ın 2. parametresi
 // 17. satır setTimeout'un 2. parametresi
 
+// Dikkatinizi çekmesi için değiştirilen innerHTML alanlarına default değer eklendi.
