@@ -1,0 +1,45 @@
+.nicefont{
+    font-family:    'open sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+    font-weight: 500;
+}
+
+body {
+    background: black;
+  }
+  
+  .clock {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    text-shadow: 3px 3px black;
+  }
+  
+  .text1 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px black;
+  }
+  
+  .text2 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-shadow: 2px 2px black;
+  }
+  
+   img {
+       margin-top: 120px;
+       width: 17%;
+  }
